@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-    // public Animator animator;
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -36,9 +36,9 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        // animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
-        // animator.SetFloat("VerticalSpeed", rb.velocity.y);
-        // animator.SetBool("IsGrounded", IsGrounded());
+        animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+        animator.SetFloat("VerticalSpeed", rb.velocity.y);
+        animator.SetBool("IsGrounded", IsGrounded());
     }
 
     private bool IsGrounded ()
