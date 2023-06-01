@@ -345,6 +345,7 @@ MonoBehaviour:
   maxHealth: 3
   health: 0
   anim: {fileID: 419578084}
+  rb: {fileID: 419578080}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
