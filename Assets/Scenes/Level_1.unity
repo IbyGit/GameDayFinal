@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 419578080}
+  coll: {fileID: 419578081}
   groundCheck: {fileID: 292090510}
   groundLayer:
     serializedVersion: 2
