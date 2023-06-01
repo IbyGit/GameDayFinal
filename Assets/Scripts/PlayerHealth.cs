@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public static event Action OnPlayerDamaged;
-    public static event Action OnPlayerDeath;
+    // public static event Action OnPlayerDamaged;
+    // public static event Action OnPlayerDeath;
 
     public int maxHealth = 3;
     public int health;

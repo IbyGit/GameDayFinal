@@ -21,6 +21,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("DeathScreen");
     }
 
+    bool isMute = false;
+    public void ToggleMute () {
+        if (!isMute)
+        {
+            AudioListener.volume = 0;
+        }
+        else
+        {
+            AudioListener.volume =1;
+        }
+    }
+
     public void ExitGame () {
     #if UNITY_STANDALONE
         Application.Quit();
