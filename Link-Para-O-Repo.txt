@@ -1,0 +1,1 @@
+Devido ao arquivo ser muito grande estou mandando o link do github. O arquivo .exe esta na pasta "Executable", ou baixar pela release ( https://github.com/IbyGit/GameDayFinal )
