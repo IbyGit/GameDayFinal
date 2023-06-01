@@ -5,8 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame () {
+    public void LoadLevel_1 () {
         SceneManager.LoadScene("Level_1");
+    }
+
+    public void LoadSettingsScene () {
+        SceneManager.LoadScene("SettingsScene");
+    }
+
+    public void LoadMainMenu () {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadDeathScreen () {
+        SceneManager.LoadScene("DeathScreen");
     }
 
     public void ExitGame () {
