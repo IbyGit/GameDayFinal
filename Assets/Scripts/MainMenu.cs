@@ -25,11 +25,11 @@ public class MainMenu : MonoBehaviour
     public void ToggleMute () {
         if (!isMute)
         {
-            AudioListener.volume = 0;
+            AudioListener.volume = 0f;
         }
         else
         {
-            AudioListener.volume =1;
+            AudioListener.volume = 0.3f;
         }
     }
 

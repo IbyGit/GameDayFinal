@@ -5,25 +5,21 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    // public static event Action OnPlayerDamaged;
-    // public static event Action OnPlayerDeath;
-
     public int maxHealth = 3;
     public int health;
     public Animator anim;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         health = maxHealth;
     }
 
-    public void TakeDamage (int amount) {
-        health -= amount;
-        if (health <= 0)
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
         {
-            anim.SetBool("IsDead", true);
-            //todo show game over screen
+
         }
     }
 }
