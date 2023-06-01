@@ -8,6 +8,12 @@ public class HeartHealthBar : MonoBehaviour
     public PlayerHealth playerHealth;
     List<HeartHealth> hearts = new List<HeartHealth>();
 
+    private void OnEnable() {
+        PlayerHealth.OnPlayerDamaged += DrawHearts;
+    }    private void OnDisable() {
+        PlayerHealth.OnPlayerDamaged -= DrawHearts;
+    }
+
     void Start()
     {
         DrawHearts();
@@ -21,7 +27,7 @@ public class HeartHealthBar : MonoBehaviour
         }
         for (int i = 0; i < hearts.Count; i++)
         {
-            int HeartStatusRemainder = playerHealth.health;
+            int HeartStatusRemainder = (int)Mathf.Clamp(playerHealth.health - i,0 ,1);
             hearts[i].SetHeartImage((HeartStatus)HeartStatusRemainder);
         }
     }

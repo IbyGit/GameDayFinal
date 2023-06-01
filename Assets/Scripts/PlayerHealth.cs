@@ -11,6 +11,9 @@ public class PlayerHealth : MonoBehaviour
     public Animator anim;
     public Rigidbody2D rb;
 
+    public static event Action OnPlayerDamaged;
+    public static event Action OnPlayerDeath;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -22,10 +25,12 @@ public class PlayerHealth : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             health -= 1;
+            OnPlayerDamaged?.Invoke();
         }
         if (health <= 0)
         {
             Die();
+            OnPlayerDeath?.Invoke();
             Invoke("GameOver", 3);
         }
     }
