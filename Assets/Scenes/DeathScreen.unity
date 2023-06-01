@@ -1089,9 +1089,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.3529412}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.78431374}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.6666667}
+    m_HighlightedColor: {r: 0.42745098, g: 0.42745098, b: 0.42745098, a: 0.3529412}
+    m_PressedColor: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0.78431374}
+    m_SelectedColor: {r: 0.42745098, g: 0.42745098, b: 0.42745098, a: 0.6666667}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1113,7 +1113,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2021654552}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: LoadLevel_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1122,7 +1122,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &1989735845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,9 +1281,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.3529412}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.78431374}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.6666667}
+    m_HighlightedColor: {r: 0.42745098, g: 0.42745098, b: 0.42745098, a: 0.3529412}
+    m_PressedColor: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0.78431374}
+    m_SelectedColor: {r: 0.42745098, g: 0.42745098, b: 0.42745098, a: 0.6666667}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1314,7 +1314,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &2047607032
 MonoBehaviour:
   m_ObjectHideFlags: 0
