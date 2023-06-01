@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             Die();
-            Invoke("GameOver", 2);
+            Invoke("GameOver", 3);
         }
     }
 
