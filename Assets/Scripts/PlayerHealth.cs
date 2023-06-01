@@ -36,7 +36,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die ()
     {
-        anim.SetTrigger("Death");
+        rb.bodyType = RigidbodyType2D.Static;
         GetComponent<PlayerMovement>().enabled = false;
+        anim.SetTrigger("Death");
     }
 }

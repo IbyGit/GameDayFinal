@@ -754,7 +754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8e2e8d89e3a554f9a92580fabf0f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartPrefab: {fileID: 0}
+  heartPrefab: {fileID: 7598050247715280977, guid: 2badb2cac6d3a5f42a56846835f5b3ea, type: 3}
+  playerHealth: {fileID: 419578085}
 --- !u!1 &924122802
 GameObject:
   m_ObjectHideFlags: 0
